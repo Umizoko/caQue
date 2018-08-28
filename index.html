@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>caQue</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.0/p5.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="body_wrapper">
+
+        <header id="home">
+            <!--    Home-->
+            <div class="header_content">
+                <h1>caQue</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <ul>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://github.com/"><i class="fab fa-github-square"></i></a></li>
+                    <li><a href="https://ja-jp.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--        <div class="sp"></div>-->
+
+        <main>
+            <div id="nav_side">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="progress_ui" id="p5canvas"></div>
+            </div>
+
+            <!--    About-->
+            <div class="about" id="about">
+                <div class="text">
+                    <h2>Mission</h2>
+                    <p>
+                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                        <br> I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+                        <br> I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be
+                    </p>
+                </div>
+            </div>
+
+
+            <!--    Work-->
+            <div class="work" id="work">
+                <h2>Web</h2>
+                <div class="work_item">
+                    <div class="work_image">
+                        <a href="http://paletton.com/"><img src="assets/images/work_exsample01.png" alt=""></a>
+                    </div>
+                    <div class="work_text">
+                        <h3><a href="http://paletton.com/">Paletton(※test)</a></h3>
+                        <p>make color scheme</p>
+                    </div>
+                </div>
+
+                <div class="work_item">
+                    <div class="work_image">
+                        <a href="https://caniuse.com/">
+                            <img src="assets/images/work_exsample02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="work_text">
+                        <h3><a href="https://caniuse.com/">Can I Use(※test)</a>Can I Use(※test)</h3>
+                        <p>css checker</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--            <div class="sp"></div>-->
+
+            <!--    Contact-->
+            <div class="contact" id="contact">
+                <form action="#" method="post" id="contact">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><input type="text" id="name" name="name" required></dd>
+                        <dt>Mail</dt>
+                        <dd><input type="email" id="email" name="email" required></dd>
+                        <dt>Message</dt>
+                        <dd><textarea name="message" id="message" cols="30" rows="10" required></textarea></dd>
+                    </dl>
+                    <div class="submit_box">
+                        <input type="submit" id="send" name="send" value="send">
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+
+        <footer id="footer">
+            <!--    Footer-->
+            <h2>caQue</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p>copyright &copy; caQue.inc</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+.body_wrapper {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/images/home_background_resize_gaus_nepia.jpeg") fixed;
+    background-size: cover;
+}
+
+.header_content {
+    margin: 0 auto;
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+header h1 {
+    font-size: 7rem;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+header ul {
+    font-size: 5rem;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+.header_content li a,
+.header_content li a:visited,
+.header_content li a:checked {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.header_content li a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.sp {
+    height: 200px;
+    background: white;
+}
+
+main {
+    background: url("../assets/images/geometry_background_resize.jpg") fixed;
+    background-size: cover;
+}
+
+#nav_side {
+    height: 100vh;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.75);
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav {
+    height: 100%;
+    width: 100px;
+    font-size: 2rem;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a,
+nav ul li a:visited,
+nav ul li a:active,
+nav ul li a:focus {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.progress_ui {
+    width: 5px;
+    height: 180px;
+/*    background: black;*/
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/images/about_background_resize_gaus_nepia.jpg") fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.about .text {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.about .text h2 {
+    font-size: 3rem;
+}
+
+.about .text p {
+    font-size: 2rem;
+}
+
+.work {
+    width: 100%;
+    /*    height: 100vh;*/
+}
+
+.work h2 {
+    padding-top: 100px;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 5rem;
+    padding-bottom: 25px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.work h2::before {
+    content: "";
+    display: inline-block;
+    border-left: 3px solid rgba(255, 255, 255, 0.7);
+    height: 4rem;
+    padding-left: 1rem;
+}
+
+.work .work_item {
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.work_item {
+    width: 100%;
+}
+
+.work_item .work_image img {
+    width: 100%;
+    vertical-align: bottom;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.work_text {
+    width: 100%;
+    text-align: left;
+}
+
+.work_text h3 {
+    padding: 20px 20px 10px;
+    font-size: 2.5rem;
+}
+
+.work_text p {
+    padding: 10px 20px 20px;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+.work_text a,
+.work_text a:visited,
+.work_text a:active,
+.work_text a:focus {
+    color: black;
+}
+
+.work_text a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact form {
+    padding-top: 100px;
+    width: 30rem;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+}
+
+.contact form dl dt {
+    padding-bottom: 10px;
+}
+
+.contact form dl dd {
+    padding-bottom: 20px;
+}
+
+.contact #name {
+    width: 30rem;
+}
+
+.contact #email {
+    width: 30rem;
+}
+
+.contact #message {
+    width: 30rem;
+    resize: none;
+}
+
+.contact input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.contact textarea {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+
+}
+
+.submit_box {
+    text-align: center;
+
+}
+
+#send {
+    width: 100px;
+    line-height: 2;
+    font-size: 2rem;
+    background-color: aqua;
+    border: 1px solid aqua;
+}
+
+#send:hover {
+    background-color: rgb(0, 177, 255);
+    border: 1px solid rgb(0, 177, 255);
+
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #C4C4C4;
+}
+
+footer h2 {
+    font-size: 5rem;
+    padding-top: 20px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    height: 100px;
+}
+
+footer ul li {
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+footer a,
+footer a:visited,
+footer a:checked {
+    color: #C4C4C4;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    #nav_side {
+        display: none;
+    }
+
+    .about .text {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+
+    .about .text p {
+        font-size: 1.5rem;
+    }
+
+    .work h2 {
+        padding-top: 100px;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 5rem;
+    }
+
+    .work .work_item {
+        margin: 0 auto;
+        width: 80%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        margin-bottom: 100px;
+    }
+}
